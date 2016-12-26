@@ -15,6 +15,10 @@ class Insert extends CI_Controller {
         $this->load->view('insertion');
     }
 
+    public function addCommit(){
+        return "commit 3";
+    }
+
     public function insertCpu(){
         $product = $this->input->post('product-cpu');
         $price = $this->input->post('price-cpu');
